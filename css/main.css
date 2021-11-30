@@ -1,0 +1,18 @@
+.bg{
+  width:100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bg figure{
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+}
+.bg figure img{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 1000px;
+}

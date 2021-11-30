@@ -1,0 +1,175 @@
+main{
+  width:100vw;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  font-size: 12px;
+}
+main ul{
+  width:100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+main ul li{
+  width: 25vw;
+  height: calc(25vw + 130px);
+  margin: 0;
+  padding: 0;
+}
+main ul li a{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+main ul li a figure{
+  width: 25vw;
+  height: 25vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+main ul li a figure img{
+  width: 25vw;
+  height: 25vw;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main ul li a .info{
+  width: 25vw;
+  height: 130px;
+  position: absolute;
+  top: 25vw;
+  left: 0;
+}
+main ul li a .info .left{
+ position: absolute;
+ bottom: 80px;
+ left: 20px;
+}
+main ul li a .info .right{
+ position: absolute;
+ bottom: 80px;
+ right: 30px;
+}
+main ul li a .info p{
+  margin: 0;
+  padding: 0;
+}
+main ul li a .size{
+  width: 25vw;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+main ul li a .size .text{
+  position: relative;
+  top: 11px;
+}
+main ul li a .size .text p{
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  line-height: 10px;
+}
+
+main .pager{
+  width: 100%;
+  height: 209px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+main .pager ul{
+  display: flex;
+  justify-content: space-between;
+}
+main .pager ul li{
+  width: 6px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+main .pager ul .active{
+  text-decoration: underline;
+}
+
+main .one ul{
+ width: 6px;
+}
+main .two ul{
+ width: 32px;
+}
+main .three ul{
+ width: 58px;
+}
+main .four ul{
+ width: 84px;
+}
+main .five ul{
+ width: 110px;
+}
+main .six ul{
+ width: 136px;
+}
+main .seven ul{
+ width: 162px;
+}
+main .eight ul{
+ width: 188px;
+}
+main .nine ul{
+ width: 214px;
+}
+main .ten ul{
+ width: 246px;
+}
+@media screen and (min-width: 640px) {
+  main ul li a:hover .size{
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 640px) {
+  main{
+    top: 80px;
+  }
+  main ul li{
+    width: 50vw;
+    height: calc(50vw + 130px);
+  }
+  main ul li a figure{
+    width: 50vw;
+    height: 50vw;
+  }
+  main ul li a figure img{
+    width: 50vw;
+    height: 50vw;
+  }
+  main ul li a .info{
+    width: 50vw;
+    top: 50vw;
+  }
+  main ul li a .info .left{
+    top: 20px;
+  }
+  main ul li a .info .right{
+    top: 58px;
+    left: 20px;
+  }
+  main ul li a .size{
+    width: 50vw;
+  }
+}

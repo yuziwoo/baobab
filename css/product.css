@@ -1,0 +1,140 @@
+main{
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 130px;
+}
+main .img{
+  width: calc(100vw - 560px);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+main .img figure{
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 180px;
+}
+main .img figure img{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+}
+
+main .info{
+  width: 540px;
+  height: calc(100vh - 130px);
+  position: fixed;
+  top: 130px;
+  right: 0;
+  font-size: 14px;
+  font-weight: 300;
+  background: white;
+  z-index: 100;
+}
+main .info p{
+  margin: 0;
+}
+main .info .title{
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+main .info .sub_title{
+  line-height: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .info .detail .more{
+  width: 100%;
+  line-height: 26px;
+  display: grid;
+  grid-template-columns : 150px 390px;
+  margin-bottom: 70px;
+}
+
+main .info .color ul{
+  width: 540px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  padding: 0;
+  margin-bottom: 70px;
+}
+main .info .color ul li{
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+main .info .color ul a{
+  width: 100px;
+  height: 100px;
+}
+main .info .color ul img{
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+}
+main .download .content a{
+  color: #4269a3;
+  font-weight: 500;
+}
+
+main .download .content a:hover{
+  text-decoration: underline;
+}
+
+@media all and (max-width: 1000px) {
+  main .img{
+    width: 100vw;
+  }
+  main .info{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  main .info .sub_title{
+    display: flex;
+    justify-content: center;
+  }
+  main .info .detail .more{
+    display: flex;
+    justify-content: center;
+  }
+  main .info .detail .detail_left{
+    margin-right: 80px;
+  }
+  main .info .color ul{
+    justify-content: center;
+    max-width: 100vw;
+  }
+
+  main .info .color{
+    max-width: 100vw;
+  }
+  main{
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  main .info .title{
+    text-align: center;
+  }
+  .pc_footer{
+    bottom: -70px;
+    background: none;
+  }
+}

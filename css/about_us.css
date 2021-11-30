@@ -1,0 +1,31 @@
+main{
+  width:100vw;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  font-size: 16px;
+}
+
+.info{
+  font-size: 32px;
+  color: #888888;
+  text-align: center;
+  margin-top: 30vh;
+  margin-bottom: 45vh;
+  animation: info1 1.2s forwards;
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+@keyframes info1 {
+  65%{
+    transform: translateY(-10px);
+    opacity: 0.65;
+  }
+  to{
+    transform: none;
+    opacity: 1;
+  }
+}
