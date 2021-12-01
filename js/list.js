@@ -7,4 +7,5 @@ window.addEventListener('DOMContentLoaded', () => {\
     }
   }
 
+  console.log("list");
 }); /*end*/
