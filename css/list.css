@@ -49,16 +49,6 @@ main ul li a .info{
   top: 25vw;
   left: 0;
 }
-main ul li a .info .left{
- position: absolute;
- bottom: 80px;
- left: 20px;
-}
-main ul li a .info .right{
- position: absolute;
- bottom: 80px;
- right: 30px;
-}
 main ul li a .info p{
   margin: 0;
   padding: 0;
@@ -142,13 +132,30 @@ main .ten ul{
     opacity: 1;
   }
 }
+@media screen and (min-width: 641px) {
+  main ul li a .info .left{
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+  }
+  main ul li a .info .right{
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+  }
+}
 @media screen and (max-width: 640px) {
   main{
     top: 80px;
+    width: 100vw;
+    overflow: hidden;
   }
   main ul li{
     width: 50vw;
-    height: calc(50vw + 130px);
+    height: calc(50vw + 120px);
+    display: flex;
+    justify-content: flex-start;
+
   }
   main ul li a figure{
     width: 50vw;
@@ -161,15 +168,27 @@ main .ten ul{
   main ul li a .info{
     width: 50vw;
     top: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 12px;
   }
   main ul li a .info .left{
     top: 20px;
+    margin-top: 12px;
+    width: calc(50vw - 24px);
+    position: none;
+    word-break: keep-all;
   }
   main ul li a .info .right{
     top: 58px;
     left: 20px;
+    position: none;
+    height: 17px;
+    margin-top: 10px;
   }
   main ul li a .size{
-    width: 50vw;
+    display: none;
+    opacity: 0;
   }
 }

@@ -30,6 +30,10 @@ a{
   color: #252525;
   text-decoration: none;
 }
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
 
 /* Spetific */
 /* header */
@@ -39,6 +43,7 @@ a{
   top: 30px;
   left: 0;
   width: 100vw;
+  overflow: hidden;
   height: 30px;
   transition: top 1.5s;
 }
