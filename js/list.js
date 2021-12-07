@@ -31,9 +31,17 @@ class List {
       </div>
     </a>`;*/
 
-    this.new = [""];
+    this.new = [
+      ["wood", "bikingBrown", "바이킹(BIKING) BROWN", "MAHOGANY WOOD + BABUL ACACIA WOOD", "KRW 220,000", "(W)450 (D)550 (SH)450 (H)980"],
+      ["wood", "bikingGreen", "바이킹(BIKING) GREEN", "MAHOGANY WOOD + BABUL ACACIA WOOD", "KRW 220,000", "(W)450 (D)550 (SH)450 (H)980"],
+      ["wood", "bikingNatural", "바이킹(BIKING) NATURAL", "MAHOGANY WOOD + BABUL ACACIA WOOD", "KRW 220,000", "(W)450 (D)550 (SH)450 (H)980"]
+  ];
 
-    this.wood = [["wood", "p93", "하프암(HARP) WALNUT", "MAHOGANY WOOD", "KRW 170,000", "(W)630 (D)500 (SH)450 (H)800"],
+    this.wood = [
+["wood", "bikingBrown", "바이킹(BIKING) BROWN", "MAHOGANY WOOD + BABUL ACACIA WOOD", "KRW 220,000", "(W)450 (D)550 (SH)450 (H)980"],
+["wood", "bikingGreen", "바이킹(BIKING) GREEN", "MAHOGANY WOOD + BABUL ACACIA WOOD", "KRW 220,000", "(W)450 (D)550 (SH)450 (H)980"],
+["wood", "bikingNatural", "바이킹(BIKING) NATURAL", "MAHOGANY WOOD + BABUL ACACIA WOOD", "KRW 220,000", "(W)450 (D)550 (SH)450 (H)980"],
+["wood", "p93", "하프암(HARP) WALNUT", "MAHOGANY WOOD", "KRW 170,000", "(W)630 (D)500 (SH)450 (H)800"],
 ["wood", "p92", "하프사이드(HARP) VINTAGE WHITE", "MAHOGANY WOOD", "KRW 154,000", "(W)490 (D)520 (SH)450 (H)850"],
 ["wood", "p91", "하프사이드(HARP) WALNUT", "MAHOGANY WOOD", "KRW 154,000", "(W)490 (D)520 (SH)450 (H)850"],
 ["wood", "p90", "플로라(FLORA) RUSTIC", "TEAK WOOD", "KRW 186,000", "(W)490 (D)560 (SH)450 (H)900"],
@@ -128,7 +136,8 @@ class List {
 ["wood", "p1", "플라워(FLOWER) GREY FABRIC", "RUBBER WOOD", "KRW 210,000", "(W)500 (D)560 (SH)475 (H)960"]
 ];
 
-    this.metal = [["metal", "p27", "하비(HAVI) BLACK", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
+    this.metal = [
+["metal", "p27", "하비(HAVI) BLACK", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
 ["metal", "p26", "하비(HAVI) BROWN", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
 ["metal", "p25", "하비(HAVI) GREEN", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
 ["metal", "p24", "퀸스(QUEENS) ROSEGOLD", "STAINLESS STEEL", "KRW 320,000", "(W)515 (D)490 (SH)460 (H)1015"],
@@ -176,11 +185,11 @@ class List {
    this.wood2 = 20;
    this.wood3 = 20;
    this.wood4 = 20;
-   this.wood5 = 13;
+   this.wood5 = 16;
    this.others1 = 3;
    this.metal1 = 20;
    this.metal2 = 7;
-   this.new1 = 0;
+   this.new1 = 3;
    this.sofa1 = 0;
    this.table1 = 0;
   }
@@ -282,6 +291,34 @@ window.addEventListener('DOMContentLoaded', () => {
         </div>
       </a>`);
     } /*반복함수 종료*/
+  }else if(page_value == "new1"){
+    for(let i=0; i<list.new.length; i++){
+      list.category = list.new[i][0];
+      list.product = list.new[i][1];
+      list.product_name = list.new[i][2];
+      list.product_material = list.new[i][3];
+      list.product_price = list.new[i][4];
+      list.product_size = list.new[i][5];
+
+      list.new_HTML.push(`<a href="${list.category}_${list.product}.html">
+        <figure>
+          <img src="img/${list.category}/${list.product}/thumb.jpg" alt="Image Not Found">
+        </figure>
+        <div class="info">
+          <div class="left">
+            <p><b>${list.product_name}</b><br>${list.product_material}</p>
+          </div>
+          <div class="right">
+            <p>${list.product_price}</p>
+          </div>
+        </div>
+        <div class="size">
+          <div class="text">
+            <p>${list.product_size}</p>
+          </div>
+        </div>
+      </a>`);
+    } /*반복함수 종료*/
   }
 
 
@@ -340,5 +377,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-console.log("hi");
+  if(page_value == "new1"){
+    for(let i=0; i<list.new1; i++){
+      let li = document.createElement("li");
+      li.innerHTML = list.new_HTML[i];
+      ul.appendChild(li);
+    }
+  }
+
 });
