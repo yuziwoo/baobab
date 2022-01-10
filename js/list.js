@@ -136,8 +136,7 @@ class List {
 ["wood", "p1", "플라워(FLOWER) GREY FABRIC", "RUBBER WOOD", "KRW 210,000", "(W)500 (D)560 (SH)475 (H)960"]
 ];
 
-    this.metal = [
-["metal", "p27", "하비(HAVI) BLACK", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
+    this.metal = [["metal", "p27", "하비(HAVI) BLACK", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
 ["metal", "p26", "하비(HAVI) BROWN", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
 ["metal", "p25", "하비(HAVI) GREEN", "STEEL", "KRW 116,000", "(W)480 (D)600 (SH)450 (H)780"],
 ["metal", "p24", "퀸스(QUEENS) ROSEGOLD", "STAINLESS STEEL", "KRW 320,000", "(W)515 (D)490 (SH)460 (H)1015"],
@@ -164,7 +163,7 @@ class List {
 ["metal", "p3", "다모아 사이드(DAMOA SIDE) FLOWER", "STEEL", "KRW 116,000", "(W)490 (D)470 (SH)440 (H)750"],
 ["metal", "p2", "다모아 사이드(DAMOA SIDE) ORNAGE", "STEEL", "KRW 116,000", "(W)490 (D)470 (SH)440 (H)750"],
 ["metal", "p1", "다모아 사이드(DAMOA SIDE) GREY", "STEEL", "KRW 116,000", "(W)490 (D)470 (SH)440 (H)750"],
-];
+["others", "p3", "크라운 (CROWN)", "Aluminium", "KRW 150,000", "(W)415 (D)430 (SH)450 (H)920"]];
 
     this.sofa = [["sofa", "", "", "", "", ""],
 ["sofa", "", "", "", "", ""]
@@ -174,8 +173,7 @@ class List {
 ["table", "", "", "", "", ""]
 ]
 
-    this.others = [["others", "p3", "크라운 (CROWN)", "Aluminium", "KRW 150,000", "(W)415 (D)430 (SH)450 (H)920"],
-  ["others", "p2", "주피 (JUPI)", "TEAK WOOD + STEEL", "KRW 220,000", "(W)350 (D)350 (H)560 ~ 680"],
+    this.others = [["others", "p2", "주피 (JUPI)", "TEAK WOOD + STEEL", "KRW 220,000", "(W)350 (D)350 (H)560 ~ 680"],
   ["others", "p1", "뽐뿌 스툴 (PPOMPPU STOOL)", "ELM WOOD + STEEL", "KRW 96,000", "(W)400 (D)400 (H)450"]
 ];
 
@@ -186,9 +184,9 @@ class List {
    this.wood3 = 20;
    this.wood4 = 20;
    this.wood5 = 16;
-   this.others1 = 3;
+   this.others1 = 2;
    this.metal1 = 20;
-   this.metal2 = 7;
+   this.metal2 = 8;
    this.new1 = 3;
    this.sofa1 = 0;
    this.table1 = 0;
