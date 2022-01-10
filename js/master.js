@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const footer = document.getElementsByClassName("pc_footer")[0];
     footer.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.innerHTML = "경기도 김포시 운양동 739";
+    footer.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.innerHTML = "Tel) 031-988-6543 / 070-8866-8585<br>Fax) 031-988-8584";
 
     /* header 숨김 효과 */
 
