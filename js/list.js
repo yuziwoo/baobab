@@ -57,7 +57,7 @@ class List {
 ["wood", "p80", "팀버튼(TIM BURTON) GREY", "RUBBER WOOD", "KRW 210,000", "(W)515 (D)560 (SH)450 (H)860"],
 ["wood", "p79", "트론(TRON)", "BEECH WOOD", "KRW 230,000", "(W)475 (D)490 (SH)470 (H)990"],
 ["wood", "p78", "트라이(TRY)", "ASH WOOD", "KRW 320,000", "(W)680 (D)760 (SH)430 (H)830"],
-["wood", "p77", "토피(TOPI)", "TEAK WOOD", "KRW 160,000", "(W)600 (D)500 (SH)445 (H)800"],
+["wood", "p77", "토피(TOPI)", "TEAK WOOD", "KRW 210,000", "(W)600 (D)500 (SH)445 (H)800"],
 ["wood", "p76", "토르(THOR) WALNUT WOOD", "TEAK WOOD", "KRW 186,000", "(W)440 (D)500 (SH)450 (H)790"],
 ["wood", "p75", "토르(THOR) WALNUT PU", "TEAK WOOD", "KRW 186,000", "(W)440 (D)500 (SH)450 (H)790"],
 ["wood", "p74", "토르(THOR) VINTAGE WOOD", "TEAK WOOD", "KRW 186,000", "(W)440 (D)500 (SH)450 (H)790"],
